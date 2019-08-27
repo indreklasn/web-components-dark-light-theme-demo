@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="common.css" />
+    <link
+      rel="stylesheet"
+      href="light.css"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <link
+      rel="stylesheet"
+      href="dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <script
+      type="module"
+      src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Toggle</title>
+  </head>
+  <body>
+    <aside>
+      <dark-mode-toggle
+        id="dark-mode-toggle"
+        legend="Theme Switcher"
+        light="Light"
+        dark="Dark"
+        appearance="switch"
+        permanent="false"
+      ></dark-mode-toggle>
+    </aside>
+
+    <main>
+      <h1>Hi there!</h1>
+      <p>
+        Lorem ipsum dolor sit amet, legere ancillae ne vis. Ne vim laudem
+        accusam consectetuer, eu utinam integre abhorreant sea. Quo eius veri
+        ei.
+      </p>
+      <form id="content">
+        <fieldset>
+          <legend>Lorem ipsum</legend>
+          <div>
+            <select>
+              <option>Lorem</option>
+              <option>Ipsum</option>
+            </select>
+          </div>
+          <div>
+            <button type="button">Lorem</button>
+          </div>
+          <div>
+            <input type="text" value="Lorem ipsum" />
+          </div>
+          <div>
+            <input type="search" value="Lorem ipsum" />
+          </div>
+          <div>
+            <label><input checked type="checkbox" /> Lorem</label>
+            <label><input type="checkbox" /> Ipsum</label>
+          </div>
+          <div>
+            <label><input checked name="foo" type="radio" /> Lorem</label>
+            <label><input name="foo" type="radio" /> Ipsum</label>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
